@@ -177,9 +177,9 @@ const sendEmail = (e) => {
     
       <div id="mysvg">
         <div className="prof_pick_div">
-        <h6>
-          <img src="Images\profile_pick.jpg" />
-          </h6>
+        {/* <h6> */}
+          <img src="https://patelrohan224.github.io/rohanpatel/profile_p.jpg" />
+          {/* </h6> */}
           </div>
       {/* <canvas id="canvas"></canvas> */}
       </div>
