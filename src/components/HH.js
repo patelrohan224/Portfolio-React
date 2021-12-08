@@ -340,7 +340,7 @@ const sendEmail = (e) => {
           </h1>
           <p align="LEFT">
           The main area of my expertise is Web development.
-             The main area of my expertise is Web development.
+           
             <br />
             <br />
             Tech I know:
