@@ -163,7 +163,7 @@ const sendEmail = (e) => {
             <a href="https://twitter.com/rohanpatel224?t=ecNeeiKVsaimYC-qtZKcVA&s=09" target="_blank" >
               <i className="fab fa-twitter fa-3x"></i>
             </a>
-            <a href="https://patelrohan224.github.io/rohanpatel/Fw11_289_Rohan_Patel.pdf" target="_blank" >
+            <a href="https://patelrohan224.github.io/rohanpatel/Resume.pdf" target="_blank" >
               <i className="far fa-file fa-3x"></i>
             </a>
           
