@@ -70,8 +70,8 @@ export default function Work() {
         >
           <option value="">all</option>
           <option value="js">js</option>
-          <option value="py">py</option>
-          <option value="games">games</option>
+//           <option value="py">py</option>
+//           <option value="games">games</option>
         </select>
       </h1>
       <motion.div
