@@ -90,6 +90,7 @@
   margin: 0px 6.5rem;
   z-index: 0;
   animation: myanim2 0.5s ease-in;
+  overflow-y: scroll;
 }
 
 .gal-container {
