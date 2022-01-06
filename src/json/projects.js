@@ -32,5 +32,16 @@ export const projects = [
     Beautiful canvas background.
     Plays the theme sound of Marvel`
     ,skill:"HTML | CSS | Javascript | DOM | Node"
-  },    
+  },  
+  {
+    img: "https://patelrohan224.github.io/rohanpatel/stdmgnsys.PNG",
+    name: "Student managment system",
+    ext: "jsx",
+    lang: "js",
+    git: "https://github.com/patelrohan224/Student_managment_system",
+    live: "https://students-mng-rohanpatel.vercel.app/",
+    disc:`Student Management System where admin can add students and
+    contests. and user can filter, sort, and add the data.`
+    ,skill:"Html | Css | JavaScript | Nodejs | MongoDB | ReactJS | Material-UI | ExpressJs | BcryptJs | JsonWebTokens"
+  }  
 ];
