@@ -7,6 +7,10 @@
   margin-top:3500px;
 }
 
+:-webkit-scrollbar-track { border-radius: 10px; height: 100px;}
+        ::-webkit-scrollbar { width: 0px;}
+        ::-webkit-scrollbar-thumb {background: red; border-radius: 10px;}
+        ::-webkit-scrollbar-thumb:hover {background: #b30000; }
 /* class applies to select element itself, not a wrapper element */
 .select-css {
   font-size: 16px;
