@@ -1,8 +1,7 @@
 # Portfolio-React
 
-Links
 </br>
-<a href="https://rohanpatel.vercel.app/" target=_blank >Site</a>
+<a href="https://rohanpatel.vercel.app/" target=_blank >Go to Site</a>
 
 
 
