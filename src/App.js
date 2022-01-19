@@ -19,7 +19,9 @@ import { Element } from 'react-scroll'
 function Resume() {
 
   useEffect(() => {
-    window.location.href = "https://patelrohan224.github.io/rohanpatel/Resume.pdf";
+    // window.location.href = "https://patelrohan224.github.io/rohanpatel/Resume.pdf";
+    window.location.href = "https://patelrohan224.github.io/rohanpatel/Rohan Patel (Resume).pdf";
+    
   }, []);
   return null;
 }
