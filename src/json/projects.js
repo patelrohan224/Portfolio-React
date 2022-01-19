@@ -17,7 +17,7 @@ export const projects = [
     lang: "js",
     git: "https://github.com/patelrohan224/Policybazaar_clone",
     live: "https://policybazaar-clone.netlify.app/",
-    disc:"Policybazaar is an Indian insurance aggregator and multinational financial technology company based in Gurgaon"
+    disc:"Buy or renew two wheeler insurance online . Free Quotes from Top Insurers with Lowest Premiums in 20 Seconds"
     ,skill:"HTML | CSS | ReactJs | ExpressJs | NodeJs | MongoDB | Redux | JSON server | Material UI"
   },
     {
@@ -27,10 +27,7 @@ export const projects = [
     lang: "js",
     git: "https://github.com/patelrohan224/Marvel_Characters",
     live: "https://marvelpatelrohan224.netlify.app/",
-    disc:`A web application to view information on Marvel characters.API fetching.
-    Debounce search input.
-    Beautiful canvas background.
-    Plays the theme sound of Marvel`
+    disc:`Search for your favourite Marvel comic characters to know more about them`
     ,skill:"HTML | CSS | Javascript | DOM | Node"
   },  
   {
@@ -43,5 +40,15 @@ export const projects = [
     disc:`Student Management System where admin can add students and
     contests. and user can filter, sort, and add the data.`
     ,skill:"Html | Css | JavaScript | Nodejs | MongoDB | ReactJS | Material-UI | ExpressJs | BcryptJs | JsonWebTokens"
-  }  
+  },
+  {
+    img: "https://patelrohan224.github.io/rohanpatel/music.PNG",
+    name: "Music Album Record",
+    ext: "jsx",
+    lang: "js",
+    git: "https://github.com/patelrohan224/music_album-record",
+    live: "https://music-album-records-rohanpatel.vercel.app/",
+    disc:`Music Album Records app where artist can add albums with songs. search ,filter, edit and sort the data.`
+    ,skill:"Html | Css | JavaScript | Nodejs | MongoDB | ReactJS | Material-UI | ExpressJs | BcryptJs | JsonWebTokens | Redux"
+  }    
 ];
