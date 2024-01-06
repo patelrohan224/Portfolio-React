@@ -11,18 +11,16 @@ export default function Skills() {
   return (
     <>
       <div className="container home-page">
-      <span className="tags top-tags">
+        <span className="tags top-tags">
           &lt;html&gt;
           <br />
           &nbsp;&nbsp;&nbsp;&lt;body&gt;
-       
         </span>
         <div className="text-zone">
           <h1
             aria-label=" Hi, I’m Rohan Patel,web developer."
             className="blast-root"
           >
-
             <span className="blast" style={{ color: "#23ffde" }}>
               S
             </span>
@@ -80,20 +78,25 @@ export default function Skills() {
             The main area of my expertise is Web development.
             <br />
             <br />
-            Tech I know:
-            &nbsp;&nbsp; <b>React &nbsp;|&nbsp; Express &nbsp;|&nbsp; JavaScript  &nbsp;</b><br />
+            Tech I know: &nbsp;&nbsp;{" "}
+            <b>React &nbsp;|&nbsp; Express &nbsp;|&nbsp; JavaScript &nbsp;</b>
             <br />
-            <ul>  
-            &nbsp;&nbsp; • &nbsp;&nbsp; HTML , CSS , ReactJs , Nodejs<br />
-            &nbsp;&nbsp; • &nbsp;&nbsp; Express , MongoDB<br />
-            &nbsp;&nbsp; • &nbsp;&nbsp; Material-UI , Bootstrap<br />
-            &nbsp;&nbsp; • &nbsp;&nbsp; NPM , JSON , Starpi , Postman , Git<br />
+            <br />
+            <ul>
+              &nbsp;&nbsp; • &nbsp;&nbsp; HTML , CSS , ReactJs , Nodejs
+              <br />
+              &nbsp;&nbsp; • &nbsp;&nbsp; Express , MongoDB
+              <br />
+              &nbsp;&nbsp; • &nbsp;&nbsp; Material-UI , Bootstrap
+              <br />
+              &nbsp;&nbsp; • &nbsp;&nbsp; NPM , JSON , Starpi , Postman , Git
+              <br />
             </ul>
             <br />
             <br />
             Visit my&nbsp;
             <a
-              href="https://www.linkedin.com/in/rohan-patel-18a7091ab/"
+              href="https://www.linkedin.com/in/rohan-patel-%F0%9F%87%AE%F0%9F%87%B3-18a7091ab"
               style={{ color: "#23ffde" }}
             >
               LinkedIn&nbsp;
@@ -112,9 +115,7 @@ export default function Skills() {
           &lt;/html&gt;
         </span>
       </div>
-      <div id="mysvg">
-       
-      </div>
+      <div id="mysvg"></div>
     </>
   );
 }

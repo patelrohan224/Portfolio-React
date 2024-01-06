@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import { projects } from "../json/projects"
-import {Posts} from "./Poost"
+import { projects } from "../json/projects";
+import { Posts } from "./Poost";
 import "../work.css";
 import bounce from "../script/bounce";
 const container = {
@@ -42,8 +42,7 @@ const container = {
 // }
 
 export default function Work() {
-
-  const [filter, setFilter] = useState("")
+  const [filter, setFilter] = useState("");
 
   useEffect(() => {
     document.title = "Rohan Patel | Projects ";
@@ -52,14 +51,17 @@ export default function Work() {
 
   return (
     <div className="gal-container">
-       {/* <span className="tags top-tags">
+      {/* <span className="tags top-tags">
           &lt;html&gt;
           <br />
           &nbsp;&nbsp;&nbsp;&lt;body&gt;
        
         </span> */}
-      <h1  aria-label=" Hi, I’m Rohan Patel,web developer."
-            className="blast-root" style={{ textAlign: "center", margin: "1rem", color: "#23ffde" }}>
+      <h1
+        aria-label=" Hi, I’m Rohan Patel,web developer."
+        className="blast-root"
+        style={{ textAlign: "center", margin: "1rem", color: "#23ffde" }}
+      >
         <span className="blast">My</span>
         <span className="blast">_Projects . </span>
         <select
@@ -69,9 +71,6 @@ export default function Work() {
           onChange={({ target: { value } }) => setFilter(value)}
         >
           <option value="">all</option>
-          <option value="js">js</option>
-//           <option value="py">py</option>
-//           <option value="games">games</option>
         </select>
       </h1>
       <motion.div
@@ -80,13 +79,12 @@ export default function Work() {
         initial="hidden"
         animate="show"
       >
-        {projects.filter(d => d.lang.search(filter) !== -1)
+        {projects
+          .filter((d) => d.lang.search(filter) !== -1)
           .map((d) => (
             <Posts {...d} />
           ))}
       </motion.div>
-      
     </div>
-    
   );
 }

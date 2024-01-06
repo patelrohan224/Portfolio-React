@@ -1,26 +1,21 @@
 import React, { useEffect } from "react";
 import bounce from "../script/bounce";
-import lion from "../script/Lionn"
+import lion from "../script/Lionn";
 
 export default function About() {
-  
-
-
   useEffect(() => {
-
     document.title = "Rohan Patel | About Me ";
-    lion()
+    lion();
     bounce();
   }, []);
 
   return (
     <>
       <div className="container home-page">
-      <span className="tags top-tags">
+        <span className="tags top-tags">
           &lt;html&gt;
           <br />
           &nbsp;&nbsp;&nbsp;&lt;body&gt;
-       
         </span>
         <div className="text-zone">
           <h1
@@ -70,8 +65,7 @@ export default function About() {
             Well-organised enthusiastic person, problem solver, quick learner,
             debugger and,
             <br />
-            a fan of "G O T", Outdoor Sports, and
-            recently, Gaming.
+            a fan of "G O T", Outdoor Sports, and recently, Gaming.
             <br />
             <br />
             Interested in the development spectrum and actively looking for an
@@ -80,7 +74,7 @@ export default function About() {
             <br />
             Follow me on&nbsp;
             <a
-              href="https://www.linkedin.com/in/rohan-patel-18a7091ab/"
+              href="https://www.linkedin.com/in/rohan-patel-%F0%9F%87%AE%F0%9F%87%B3-18a7091ab"
               style={{ color: "#23ffde" }}
             >
               LinkedIn&nbsp;
@@ -99,7 +93,7 @@ export default function About() {
         </span>
       </div>
       <div id="mysvg">
-      <div id="world"></div>
+        <div id="world"></div>
       </div>
     </>
   );

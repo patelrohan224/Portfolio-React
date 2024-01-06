@@ -4,11 +4,8 @@ import circleAnim from "../script/circle";
 import { useHistory } from "react-router-dom";
 
 export default function Home() {
-
-  
   useEffect(() => {
-    document.title =
-      "Rohan Patel | Full Stack Developer";
+    document.title = "Rohan Patel | Full Stack Developer";
 
     bounce();
     // circleAnim()
@@ -29,13 +26,11 @@ export default function Home() {
     <>
       <div className="container home-page">
         {/* <div id="world"></div> */}
-  
 
         <span className="tags top-tags">
           &lt;html&gt;
           <br />
           &nbsp;&nbsp;&nbsp;&lt;body&gt;
-       
         </span>
         <div className="text-zone">
           <h1
@@ -81,28 +76,38 @@ export default function Home() {
             aria-label=" Hi, I’m Rohan Patel,web developer."
             className="blast-root"
           >
-          <h2>Full Stack Web Developer  </h2>
-          <h2 className="h2_about">A passionate full stack web developer from India. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces.</h2>
-         </p>
+            <h2>Full Stack Web Developer </h2>
+            <h2 className="h2_about">
+              A passionate full stack web developer from India. My passion for
+              software lies with dreaming up ideas and making them come true
+              with elegant interfaces.
+            </h2>
+          </p>
 
-         <h5
+          <h5
             aria-label=" Hi, I’m Rohan Patel,web developer."
             className="blast-root"
           >
-         <div className="icons">
-            <a href="https://github.com/patelrohan224" target="_blank" >
-              <i className="fab fa-github fa-3x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/rohan-patel-18a7091ab/" target="_blank" >
-              <i className="fab fa-linkedin fa-3x"></i>
-            </a>
-            <a href="https://twitter.com/rohanpatel224?t=ecNeeiKVsaimYC-qtZKcVA&s=09" target="_blank" >
-              <i className="fab fa-twitter fa-3x"></i>
-            </a>
-            {/* <a href="https://patelrohan224.github.io/rohanpatel/Fw11_289_Rohan_Patel.pdf" target="_blank" >
+            <div className="icons">
+              <a href="https://github.com/patelrohan224" target="_blank">
+                <i className="fab fa-github fa-3x"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rohan-patel-%F0%9F%87%AE%F0%9F%87%B3-18a7091ab"
+                target="_blank"
+              >
+                <i className="fab fa-linkedin fa-3x"></i>
+              </a>
+              <a
+                href="https://twitter.com/rohanpatel224?t=ecNeeiKVsaimYC-qtZKcVA&s=09"
+                target="_blank"
+              >
+                <i className="fab fa-twitter fa-3x"></i>
+              </a>
+              {/* <a href="https://patelrohan224.github.io/rohanpatel/Fw11_289_Rohan_Patel.pdf" target="_blank" >
               <i className="fas fa-file fa-3x"></i>
             </a> */}
-          </div>
+            </div>
           </h5>
         </div>
         <span className="tags bottom-tags">
@@ -110,14 +115,11 @@ export default function Home() {
           <br />
           &lt;/html&gt;
         </span>
-    
-      <div id="mysvg">
-        
-      <canvas id="canvas"></canvas>
-      </div>
+
+        <div id="mysvg">
+          <canvas id="canvas"></canvas>
+        </div>
       </div>
     </>
   );
 }
-
-

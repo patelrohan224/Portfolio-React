@@ -1,16 +1,12 @@
-import React, { useRef,useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import bounce from "../script/bounce";
-import emailjs from 'emailjs-com';
-
-
-
+import emailjs from "emailjs-com";
 
 export default function Contact() {
-
   const search = useLocation().search;
-  const resp = new URLSearchParams(search).get('response');
+  const resp = new URLSearchParams(search).get("response");
 
   const [thank, setThank] = useState(false);
 
@@ -29,43 +25,63 @@ export default function Contact() {
     damping: 40,
   };
 
- 
-const form = useRef();
-  
-const sendEmail = (e) => {
-  e.preventDefault();
-  console.log(form.current);
-  emailjs.sendForm('service_po2qqqf', 'template_8myz7f3', form.current, 'user_UTRKgtH1gzvqXk75IiidS')
-    .then((result) => {
-        console.log(result.text);
-        setThank(true);
-    }, (error) => {
-        console.log(error.text);
-        setThank(false);
-    });
-};
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log(form.current);
+    emailjs
+      .sendForm(
+        "service_po2qqqf",
+        "template_8myz7f3",
+        form.current,
+        "user_UTRKgtH1gzvqXk75IiidS"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setThank(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setThank(false);
+        }
+      );
+  };
   return (
     <>
-      {thank &&
-        <div style={{ position: "absolute", zIndex: 999999, top: "10px", left: "50%", transform: "translate(-50%, 0%)" }}>
-          <div style={{
-            padding: "2rem 4rem", backgroundColor: "#222", 
-            textAlign: "center", borderRadius: "1rem",
-            boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
-          }}>
-            <h3 style={{ color: "#23ffde", fontSize: "2rem" }}>
-              Thank you !
-            </h3>
-            <p style={{ color: "#fff", fontSize: "1rem" }}>We will soon get in touch 😃.</p>
+      {thank && (
+        <div
+          style={{
+            position: "absolute",
+            zIndex: 999999,
+            top: "10px",
+            left: "50%",
+            transform: "translate(-50%, 0%)",
+          }}
+        >
+          <div
+            style={{
+              padding: "2rem 4rem",
+              backgroundColor: "#222",
+              textAlign: "center",
+              borderRadius: "1rem",
+              boxShadow:
+                "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
+            }}
+          >
+            <h3 style={{ color: "#23ffde", fontSize: "2rem" }}>Thank you !</h3>
+            <p style={{ color: "#fff", fontSize: "1rem" }}>
+              We will soon get in touch 😃.
+            </p>
           </div>
         </div>
-      }
+      )}
       <div className="container home-page" style={{ zoom: "95%" }}>
-      <span className="tags top-tags">
+        <span className="tags top-tags">
           &lt;html&gt;
           <br />
           &nbsp;&nbsp;&nbsp;&lt;body&gt;
-       
         </span>
         <div className="text-zone">
           <h1
@@ -104,35 +120,47 @@ const sendEmail = (e) => {
             I am interested in freelance opportunities – especially ambitious or
             large projects. However, if you have other request or question,
             don’t hesitate to contact me using below form either.
-              <a
+            <a
               href="mailto:rohanpateloff@gmail.com"
               style={{ color: "#23ffde" }}
             >
-            &nbsp;&nbsp;rohanpateloff@gmail.com&nbsp;
+              &nbsp;&nbsp;rohanpateloff@gmail.com&nbsp;
             </a>
           </p>
-          
+
           <div className="icons_contact">
-            <a href="https://github.com/patelrohan224" target="_blank" >
+            <a href="https://github.com/patelrohan224" target="_blank">
               <i className="fab fa-github fa-2x"></i>
             </a>
-            <a href="https://www.linkedin.com/in/rohan-patel-18a7091ab/" target="_blank" >
+            <a
+              href="https://www.linkedin.com/in/rohan-patel-%F0%9F%87%AE%F0%9F%87%B3-18a7091ab"
+              target="_blank"
+            >
               <i className="fab fa-linkedin fa-2x"></i>
             </a>
-            <a href="https://twitter.com/rohanpatel224?t=ecNeeiKVsaimYC-qtZKcVA&s=09" target="_blank" >
+            <a
+              href="https://twitter.com/rohanpatel224?t=ecNeeiKVsaimYC-qtZKcVA&s=09"
+              target="_blank"
+            >
               <i className="fab fa-twitter fa-2x"></i>
             </a>
           </div>
           <div className="contact">
-            <form ref={form} onSubmit={sendEmail}
+            <form
+              ref={form}
+              onSubmit={sendEmail}
               className="form"
               action="https://formsubmit.co/b6a7714e1b4daa06870a4ac3e0718e01"
               method="POST"
               autoComplete="off"
             >
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="http://localhost:3000/contact?response=true" />
-              <input type="text" name="_honey" style={{ "display": "none" }} />
+              <input
+                type="hidden"
+                name="_next"
+                value="http://localhost:3000/contact?response=true"
+              />
+              <input type="text" name="_honey" style={{ display: "none" }} />
               <motion.input
                 id="name"
                 type="text"
@@ -192,7 +220,6 @@ const sendEmail = (e) => {
               />
             </form>
           </div>
-         
         </div>
 
         <span className="tags bottom-tags">
@@ -226,4 +253,3 @@ const sendEmail = (e) => {
   );
 }
 // 23.7802930,73.1013808
-
