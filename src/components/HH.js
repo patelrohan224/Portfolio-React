@@ -198,7 +198,7 @@ export default function HH() {
           <div id="mysvg">
             <div className="prof_pick_div">
               {/* <h6> */}
-              <img src="https://patelrohan224.github.io/rohanpatel/profile_p.jpg" />
+              <img src="https://media.licdn.com/dms/image/D5603AQFywrcCXxEz3A/profile-displayphoto-shrink_200_200/0/1682172141928?e=1711584000&v=beta&t=_TqCMkocZiOWapRLRvy0F7edhqA80g9I9IL4FdzErr4" />
               {/* </h6> */}
             </div>
             {/* <canvas id="canvas"></canvas> */}
